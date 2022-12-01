@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+#__next {
+  height: 100%;
+}
+
+.custom-input {
+  width: 190px;
+  height: 50px;
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-input svg {
+  width: 30px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/*  */
+.polygon {
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  position: absolute !important;
+  z-index: 0;
+}
+.polygon.polygon1 {
+  background: url(/assets/polygon3.png);
+  top: -15%;
+  left: -15%;
+  width: 370px;
+  height: 470px;
+}
+.polygon.polygon2 {
+  background: url(/assets/polygon1.png);
+  top: -8%;
+  right: -8%;
+  width: 249px;
+  height: 450px;
+}
+.polygon.polygon3 {
+  background: url(/assets/polygon2.png);
+  top: -70%;
+  left: -10%;
+  width: 370px;
+  height: 410px;
+}
+
+@media (max-width: 1199.98px) {
+  .polygon.polygon1 {
+    left: -25%;
+    width: 370px;
+    height: 470px;
+  }
+  .polygon.polygon2 {
+    right: -12%;
+  }
+  .polygon.polygon3 {
+    top: -55%;
+    left: -12%;
+    width: 370px;
+    height: 349px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  nav div.active {
+    left: 0;
+    background-color: rgba(119, 115, 115, 0.8);
+    display: flex;
+    align-items: flex-start;
+    row-gap: 30px;
+    padding: 50px;
+    color: #fff;
+  }
+  .custom-input {
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .transformicon {
+    transform: translateX(-5px);
+  }
+  .polygon.polygon1 {
+    top: -10%;
+    left: -30%;
+    height: 400px;
+  }
+  .polygon.polygon2 {
+    top: -8%;
+    right: -20%;
+    width: 249px;
+    height: 450px;
+  }
+}
+@media (max-width: 575.98px) {
+  .polygon.polygon1 {
+    top: -10%;
+    left: -43%;
+    height: 400px;
+  }
+  .polygon.polygon2 {
+    top: -8%;
+    right: -30%;
+  }
+  .polygon.polygon3 {
+    top: -20%;
+    left: -25%;
+  }
+}
+ul li svg {
+  margin-right: 5px;
+}
